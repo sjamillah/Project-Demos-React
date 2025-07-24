@@ -6,7 +6,6 @@ const Meals = () => {
     const [items, setItems] = useState([])
 
     useEffect(() => {
-        // eslint-disable-next-line no-undef
         axios
         .get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
             .then(res => {
